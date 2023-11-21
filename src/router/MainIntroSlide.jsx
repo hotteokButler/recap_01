@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import { useLoaderData } from 'react-router-dom';
@@ -25,7 +25,7 @@ function MainIntroSlide() {
         className='mySwiper'
       >
         {results.map((movie, idx) => (
-          <SwiperSlide key={`movie_${idx}`}>
+          <SwiperSlide key={`movie_${idx}`} tag="li">
             <MovieLi key={idx} movie={movie} />
           </SwiperSlide>
         ))}
