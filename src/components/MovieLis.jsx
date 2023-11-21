@@ -16,7 +16,6 @@ function MovieLis() {
   const [data, setData] = useState(null);
   const [paging, setPaging] = useState({});
 
-
   useEffect(() => {
     fetch(REQUEST_URL[state.id], {
       method: 'GET',
@@ -33,20 +32,22 @@ function MovieLis() {
         setLoading(false);
       })
       .catch((error) => console.log('error', error));
-  }, [state,paging]);
+  }, [state, paging]);
 
   return (
-    <div id="movie_lis_wrap" className="px-4">
+    <div id='movie_lis_wrap'>
       {loading ? (
-        <h1 className="text-xl font-bold">Loading</h1>
+        <h1 className='text-xl font-bold'>Loading</h1>
       ) : (
         <div>
-          <ul className="flex justify-start flex-wrap">
+          <ul className='flex justify-start flex-wrap py-4'>
             {data.map((movie, idx) => (
-              <MovieLi key={idx} movie={movie} />
+              <li key={idx} className='w-1/2 p-[1%] sm:w-1/3 xl:w-1/5 xl:p-[0.7%] mb-2'>
+                <MovieLi movie={movie} />
+              </li>
             ))}
           </ul>
-          <div className="paging">
+          <div className='paging'>
             {paging.page} / {paging.total_pages}
           </div>
         </div>

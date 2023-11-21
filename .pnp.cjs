@@ -35,8 +35,10 @@ const RAW_RUNTIME_STATE =
           ["postcss", "npm:8.4.31"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:18.2.0"],\
+          ["react-icons", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:4.12.0"],\
           ["react-router-dom", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:6.18.0"],\
           ["react-scripts", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:5.0.1"],\
+          ["swiper", "npm:11.0.4"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
@@ -12401,8 +12403,10 @@ const RAW_RUNTIME_STATE =
           ["postcss", "npm:8.4.31"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:18.2.0"],\
+          ["react-icons", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:4.12.0"],\
           ["react-router-dom", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:6.18.0"],\
           ["react-scripts", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:5.0.1"],\
+          ["swiper", "npm:11.0.4"],\
           ["tailwindcss", "npm:3.3.5"],\
           ["web-vitals", "npm:2.1.4"]\
         ],\
@@ -15173,6 +15177,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-icons", [\
+      ["npm:4.12.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/react-icons-npm-4.12.0-8fe2109eaf-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "npm:4.12.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:4.12.0", {\
+        "packageLocation": "./.yarn/__virtual__/react-icons-virtual-8dc32de2d2/4/.yarn/berry/cache/react-icons-npm-4.12.0-8fe2109eaf-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "virtual:a5529d2baea11e3486d9180a2db4ea18dda43ca98a85f606fc40df6eb331dc86abdc682c5de466166288d384f3dd1c31a304f6100691754532bfc2beb76cd5f0#npm:4.12.0"],\
+          ["@types/react", null],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-is", [\
       ["npm:16.13.1", {\
         "packageLocation": "../../../.yarn/berry/cache/react-is-npm-16.13.1-a9b9382b4f-10c0.zip/node_modules/react-is/",\
@@ -16724,6 +16750,15 @@ const RAW_RUNTIME_STATE =
           ["csso", "npm:4.2.0"],\
           ["picocolors", "npm:1.0.0"],\
           ["stable", "npm:0.1.8"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["swiper", [\
+      ["npm:11.0.4", {\
+        "packageLocation": "../../../.yarn/berry/cache/swiper-npm-11.0.4-4498d69360-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:11.0.4"]\
         ],\
         "linkType": "HARD"\
       }]\

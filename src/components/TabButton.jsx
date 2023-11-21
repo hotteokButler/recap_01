@@ -11,7 +11,7 @@ function TabButton({ elem_id }) {
 
   return (
     <Link
-      className={`rounded-md px-4 py-3 inline-block font-bold text-xs mx-2 my-4 duration-500 hover:bg-purple-950 hover:text-white ${
+      className={`rounded-md px-4 py-3 inline-block font-bold text-xs mr-3 my-1 duration-500 hover:bg-purple-950 hover:text-white ${
         is_match ? 'bg-purple-950 text-white' : 'bg-slate-200'
       }`}
       to={elem_id}

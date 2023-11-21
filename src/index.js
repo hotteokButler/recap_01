@@ -5,6 +5,7 @@ import './css/index.css';
 import MainPage from './router/MainPage';
 import ErrorPage from './router/ErrorPage';
 import MovieLis from './components/MovieLis';
+import {nowPlayingData} from './router/load/MainSlData';
 
 
 const router = createBrowserRouter([
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     path: '/',
     element: <MainPage />,
     errorElement: <ErrorPage />,
+    loader : nowPlayingData,
     children: [
       {
         path: 'popular',
