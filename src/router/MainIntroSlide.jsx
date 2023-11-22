@@ -13,8 +13,8 @@ function MainIntroSlide() {
   const { results } = loader_data;
 
   return (
-    <div className='pt-7 pb-10'>
-      <h3 className='font-bold text-4xl py-6 flex items-center'><FcFilmReel className='inline-block mr-3' /><span>UPCOMMING LIST</span></h3>
+    <div className='pt-4 pb-10'>
+      <h2 className='font-bold text-3xl pb-4 flex items-center'><FcFilmReel className='inline-block mr-3' /><span>UPCOMMING LIST</span></h2>
       <Swiper
         wrapperTag='ul'
         slidesPerView={1.4}
