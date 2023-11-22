@@ -14,7 +14,7 @@ function MainIntroSlide() {
 
   return (
     <div className='pt-4 pb-10'>
-      <h2 className='font-bold text-3xl pb-4 flex items-center'><FcFilmReel className='inline-block mr-3' /><span>UPCOMMING LIST</span></h2>
+      <h2 className='font-bold text-3xl pb-4 flex items-center'><FcFilmReel className='inline-block mr-3' /><span>NOW PLAYING</span></h2>
       <Swiper
         wrapperTag='ul'
         slidesPerView={1.4}
