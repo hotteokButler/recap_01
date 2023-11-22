@@ -28,8 +28,8 @@ function MovieLis() {
       .then((result) => {
         const { results, total_pages } = result;
         setData(results);
-        // 최대 100페이지 제한
-        setTotalPage(total_pages > 100 ? 100 : total_pages);
+        // 최대 호출 가능 페이지 500페이지 제한
+        setTotalPage(total_pages > 500 ? 500 : total_pages);
         setLoading(false);
       })
       .catch((error) => console.log('error', error));
@@ -63,7 +63,7 @@ function MovieLis() {
           <ul className='flex justify-start flex-wrap py-4'>
             {data.length > 0 ? (
               data.map((movie, idx) => (
-                <li key={idx} className='w-1/2 p-[1%] sm:w-1/3 xl:w-1/5 xl:p-[0.7%] mb-2'>
+                <li key={idx} className='w-1/2 p-[1%] sm:w-1/3 xl:w-1/5 xl:p-[0.7%] mb-2 overflow-hidden'>
                   <MovieLi movie={movie} />
                 </li>
               ))
