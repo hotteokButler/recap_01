@@ -32,6 +32,9 @@ function MainIntroSlide() {
             slidesPerView: 4.5,
             spaceBetween:30,
           },
+          1080 : {
+            slidesPerView: 6.5,
+          }
         }}
         className='mySwiper'
       >

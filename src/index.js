@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <MovieLis/>,
       },
       {
-        path: 'upcomming',
+        path: 'upcoming',
         element: <MovieLis/>,
       },
     ],

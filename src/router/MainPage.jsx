@@ -8,7 +8,7 @@ import { PiSmileyWinkFill } from 'react-icons/pi';
 
 const BTN_LIS = Object.freeze({
   popular: 'popular',
-  upcomming: 'upcomming',
+  upcoming: 'upcoming',
   top_rate: 'top_rate',
 });
 
