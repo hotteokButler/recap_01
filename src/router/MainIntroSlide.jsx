@@ -1,36 +1,47 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Scrollbar } from 'swiper/modules';
 import { useLoaderData } from 'react-router-dom';
+import MovieLi from '../components/MovieLi';
+import { FcFilmReel } from "react-icons/fc";
 import 'swiper/css';
 import 'swiper/css/pagination';
-import MovieLi from '../components/MovieLi';
+import 'swiper/css/scrollbar';
 
 function MainIntroSlide() {
   const loader_data = useLoaderData();
   const { results } = loader_data;
 
   return (
-    <>
+    <div className='pt-7 pb-10'>
+      <h3 className='font-bold text-4xl py-6 flex items-center'><FcFilmReel className='inline-block mr-3' /><span>UPCOMMING LIST</span></h3>
       <Swiper
         wrapperTag='ul'
-        slidesPerView={4}
-        centeredSlides={true}
-        spaceBetween={30}
+        slidesPerView={1.4}
+        spaceBetween={20}
         grabCursor={true}
-        pagination={{
-          clickable: true,
+        scrollbar={{
+          hide: false,
         }}
-        modules={[Pagination]}
+        modules={[Scrollbar]}
+        breakpoints={{
+          480: {
+            slidesPerView: 2.5,
+          },
+          768: {
+            slidesPerView: 4.5,
+            spaceBetween:30,
+          },
+        }}
         className='mySwiper'
       >
         {results.map((movie, idx) => (
-          <SwiperSlide key={`movie_${idx}`} tag="li">
+          <SwiperSlide key={`movie_${idx}`} tag='li' className="pb-[5%]">
             <MovieLi key={idx} movie={movie} />
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+    </div>
   );
 }
 
